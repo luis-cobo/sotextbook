@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Conceptos Básicos de Sistemas Operativos &mdash; documentación de Sistemas Operativos - 0.0.1</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Evolución de los Sistemas Operativos" href="capitulo02.html" />
+    <link rel="prev" title="Fundamentos de Sistemas Operativos" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sistemas Operativos
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conceptos Básicos de Sistemas Operativos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#niveles-de-los-sistemas-operativos">Niveles de los Sistemas Operativos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#funciones-de-un-sistema-operativo">Funciones de un Sistema Operativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#servicios-del-sistema-operativo">Servicios del Sistema Operativo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="capitulo02.html">Evolución de los Sistemas Operativos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller01.html">Taller 01: Explorar la historia del computador</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sistemas Operativos</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Conceptos Básicos de Sistemas Operativos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/capitulo01.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="conceptos-basicos-de-sistemas-operativos">
+<h1>Conceptos Básicos de Sistemas Operativos<a class="headerlink" href="#conceptos-basicos-de-sistemas-operativos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Encontrar una definición concreta de un sistema operativo no es cosa sencilla. Muchos
+autores lo definen de manera diferente. Para unos autores, se trata de un conjunto de
+programas o software destinado a permitir la comunicación del usuario con un computador
+y gestionar los recursos del mismo de manera cómoda y eficiente.</p>
+<p>Otros autores lo definen como <em>una colección organizada de programas que extienden el
+hardware del computador, y que consisten de rutinas de control para la operación de un
+computador y que proporciona un ambiente para la ejecución de los programas</em>. Sea cual
+sea la definición, debemos tener en cuenta que un sistema operativo es una parte muy
+importante en casi cada sistema de cómputo.</p>
+<p>Eso si, hay que tener en cuenta que el sistema operativo es el programa más
+importante del computador. Sin él, no es posible que funcionen los otros
+programas que tenemos instalados en nuestro equipo. Los sistemas operativos
+realizan tareas básicas para el usuario, tales como permitir acceso al
+teclado, enviar información a la pantalla, llevar registro de los archivos y
+directorios de la carpeta, controlar los dispositivos periféricos tales como
+impresora, mouse, etc.</p>
+<p>En sistemas grandes, el sistema operativo tiene incluso mayor responsabilidad
+y poder, es como un policía de tránsito, ya que se asegura de que los
+programas y los usuarios que están trabajando en el computador al mismo tiempo
+no interfieran entre ellos. El sistema operativo también es responsable de la
+seguridad, verificando que los usuarios no autorizados no tengan acceso al
+sistema.</p>
+<p>A partir de todo la anterior, es que podemos indicar que un sistema de cómputo
+puede dividirse principalmente en cuatro componentes:</p>
+<ul class="simple">
+<li><p>El hardware de la máquina</p></li>
+<li><p>El sistema operativo</p></li>
+<li><p>Los programas de aplicación, y</p></li>
+<li><p>Los usuarios</p></li>
+</ul>
+<div class="figure align-default" id="id1">
+<img alt="Visión abstracta de un sistema de cómputo" src="_images/fig01.png" />
+<p class="caption"><span class="caption-text">Figura 1 Visión abstracta de un sistema de cómputo [Tomado de (Tomsho, 2017)]</span><a class="headerlink" href="#id1" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<div class="section" id="niveles-de-los-sistemas-operativos">
+<h2>Niveles de los Sistemas Operativos<a class="headerlink" href="#niveles-de-los-sistemas-operativos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La mayoría de los diseños de sistemas operativos dividen internamente la construcción
+del mismo en tres niveles:</p>
+<ul class="simple">
+<li><p>El Shell</p></li>
+<li><p>Los Servicios o API de llamado al Sistema y</p></li>
+<li><p>El núcleo o <em>kernel</em></p></li>
+</ul>
+<div class="figure align-default" id="id2">
+<img alt="Arquitectura del sistema operativo UNIX" src="_images/fig02.gif" />
+<p class="caption"><span class="caption-text">Figura 2 Niveles del Sistema Operativo [Tomado de (Stevens, 2005)]</span><a class="headerlink" href="#id2" title="Enlace permanente a esta imagen">¶</a></p>
+</div>
+<dl class="simple">
+<dt>Shell</dt><dd><p>El <strong>shell</strong> es un programa que comunica el núcleo con los usuarios, ya sean
+aplicaciones o personas. El shell cuenta con un extenso grupo de comandos que los
+usuarios pueden utilizar para solicitar acciones. El shell interpreta esos
+comandos y realiza las llamadas al sistema.</p>
+</dd>
+<dt>Servicios o Llamadas al sistema</dt><dd><p>Ofrece a los programas un conjunto de servicios en forma de interfaz de programación o
+<em>API</em>. Cualquier servicio que un programa necesite del sistema operativo se puede obtener
+a través de estos <em>llamados al sistema</em>. Cada sistema operativo ofrece a los desarrolladores
+un API con el cual se pueden construir programas en ese sistema operativo. Por ejemplo,
+el sistema operativo Android permite que los programas puedan conocer la ubicación
+geográfica del usuario o el sistema operativo Windows, permite que los programas
+dibujen figuras o imágenes sobre la pantalla. Esos son servicios que se ofrecen a través
+de los APIs.</p>
+</dd>
+<dt>Núcleo o <em>Kernel</em></dt><dd><p>El núcleo es un programa con la capacidad y autoridad de asignar y restringir el uso de todos los recursos. Es el elemento administrador. Sin embargo, los usuarios no pueden interactuar directamente con el núcleo, porque el núcleo sólo atiende llamadas de sistema, que son accedidas desde los programas desarrollados por los programadores.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="funciones-de-un-sistema-operativo">
+<h2>Funciones de un Sistema Operativo<a class="headerlink" href="#funciones-de-un-sistema-operativo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Ya que el sistema operativo es el único programa que interactúa directamente con el hardware
+del computador, entre sus funciones principales tenemos las siguientes:</p>
+<ul class="simple">
+<li><p>Hacer de interface con el usuario.</p></li>
+<li><p>Facilitar la entrada y salida del computador y la comunicación con los periféricos.</p></li>
+<li><p>Permitir compartir los diversos dispositivos del computador así como los datos que se generan
+y manejan en él.</p></li>
+<li><p>Protección (por ejemplo, que un usuario no borre los datos de otro).</p></li>
+<li><p>Planificar la distribución de recursos, es decir, debe distribuir el procesador para que
+varios usuarios puedan trabajar en él simultáneamente. La planificación busca repartir los
+recursos de forma equitativa entre los programas.</p></li>
+<li><p>Recuperarse de los errores.</p></li>
+<li><p>Organizar de datos (en el sentido de localizar rápidamente la información)</p></li>
+<li><p>Manejar las comunicaciones por la red.</p></li>
+</ul>
+<p>Según las funciones del Sistema Operativo, podemos clasificarlos en uno de los siguientes
+esquemas:</p>
+<ul class="simple">
+<li><p>Como una <em>máquina virtual</em> que ofrece una interface, y</p></li>
+<li><p>Como un administrador de recursos</p></li>
+</ul>
+<dl>
+<dt>Los Sistemas Operativos como una Máquina Virtual</dt><dd><p>Bajo este esquema, la función del sistema operativo es que el usuario vea al sistema
+operativo como el equivalente a una máquina extendida o <em>máquina virtual</em>, de tal forma
+que los programas sean más fáciles de desarrollar que lidiando directamente con el
+hardware subyacente en cada computador.</p>
+</dd>
+<dt>Los Sistemas Operativos como Gestores de Recursos</dt><dd><p>Internamente, un sistema operativo actúa como un administrador de recursos del
+computador. ¿Cuáles son esos recursos que el sistema operativo debe administrar? Pues
+entre estos recursos encontramos el procesador, la memoria, los dispositivos de entrada
+y salida.</p>
+<p>Bajo este esquema, el sistema operativo lleva registro del estado de cada recurso, y
+es él quien decida quien puede tener acceso a un recurso, por cuánto tiempo puede
+usarlo y en qué momento tiene uso del mismo.</p>
+<p>Cuando tenemos sistemas que soporten <em>concurrencia</em> (ejecución simultánea de varios
+programas en el mismo procesador), es tarea del sistema operativo resolver los diversos
+conflictos que pueden ocurrir cuando varios procesos quieren tener acceso al mismo
+tiempo al mismo recurso. Esta resolución de conflictos se debe hacer preservando la
+integridad del sistem y buscando optimizar el desempeño resultante del equipo.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="servicios-del-sistema-operativo">
+<h2>Servicios del Sistema Operativo<a class="headerlink" href="#servicios-del-sistema-operativo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un sistema operativo proporciona un ambiente para la ejecución de los programas. Esto
+lo hace a través de un conjunto de servicios que son utilizados por los programas y a
+los usuarios de estos programas.</p>
+<p>Estos servicios del sistema operativo se brindan para la comodidad del programador, con
+el fin de facilitar las tareas de programación.</p>
+<dl>
+<dt>Ejecución de programas</dt><dd><p>El sistema tiene ser capaz de cargar un programa en la memoria del computador y ejecutarlo.
+De igual manera, el programa debe ser capaz de terminar su ejecución, ya sea normal o
+anormalmente (indicándole al sistema operativo el error que ocurrió).</p>
+</dd>
+<dt>Operaciones de Entrada/Salida</dt><dd><p>Un programa en ejecución puede requerir entrada o salida de información. Esta entrada/
+salida puede incluir un archivo en el disco duro del computador o cualquier otro
+dispositivo unido al computador.</p>
+<p>Por motivos de eficiencia y protección, los usarios no deberían controlar estos
+dispositivos de entrada/salida directamente. Por lo tanto, el sistema operativo
+debe proporcionar medios para realizar operaciones de entrada/salida sobre estos
+dispositivos de manera controlada.</p>
+</dd>
+<dt>Manipulación del sistema de archivos</dt><dd><p>Los programas necesitan leer y modificar los archivos que están siendo almacenados
+en los discos del computador. De la misma manera, los programas y usuario necesitan
+crear y borrar archivos, dados el nombre del mismo.</p>
+</dd>
+<dt>Comunicaciones</dt><dd><p>En muchas circunstancias, un proceso necesitará intercambiar información con otro proceso.
+La comunicación puede ser implementada de muchas maneras, ya sea compartiendo memoria,
+o técnicas de paso de mensajes, en los cuáles los paquetes de datos son movidos entre
+procesos gracias al sistema operativo.</p>
+</dd>
+<dt>Detección de Errores</dt><dd><p>El sistema operativo necesita tener conocimiento de todos los posibles errores que puedan
+ocurrir en el computador. Estos errores pueden ocurrir en la CPU o en la memoria del
+equipo, pero también en otros dispositivos de entrada/salida así como en los programas
+de los usuaruos. Para cada tipo de error, el sistema operativo debe tomar la acción
+apropiada que asegure un funcionamiento correcto y consistente.</p>
+</dd>
+<dt>Asignación de recursos</dt><dd><p>Cuando muchos usuarios están trabajando en el sistema o cuando muchas aplicaciones
+se estén ejecutando al tiempo, el sistema operativo debe asignarles recursos a cada
+uno de estos usuario o aplicaciones.</p>
+<p>Muchos tipos de recursos son gestionados por el sistema operativos, por ejemplo, la
+pantalla, la impresora o la memoria.</p>
+</dd>
+<dt>Proteccion</dt><dd><p>Esta tarea tiene que ver con el control del acceso a los recursos. La seguridad del
+sistema de elementos externos es muy importante. Tal seguridad inicia cuando cada
+usuario tiene que autenticarse para entrar al equipo, indicando el usuario y la clave,
+y con ello tiene acceso a los recursos del computador.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="capitulo02.html" class="btn btn-neutral float-right" title="Evolución de los Sistemas Operativos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Fundamentos de Sistemas Operativos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Luis Cobo
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
